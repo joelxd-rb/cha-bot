@@ -1,0 +1,52 @@
+/* ============================================================
+   ARCHIVO: app/globals.css
+   PROPÓSITO: Estilos globales y configuración de Tailwind CSS
+   ============================================================
+   Este archivo es el punto de entrada de estilos de la app.
+   
+   @import "tailwindcss" — Importa todas las utilidades de Tailwind:
+     - Clases como bg-slate-900, text-white, flex, p-4, etc.
+     - Sistema de diseño responsive (sm:, md:, lg:, xl:)
+     - Tema de colores, espaciado, tipografía
+   
+   Los estilos personalizados que pongas aquí se aplican a
+   TODA la aplicación (todas las páginas y componentes).
+   ============================================================ */
+
+/* Importa el framework completo de Tailwind CSS */
+@import "tailwindcss";
+
+/* ============================================================
+   ESTILOS GLOBALES PERSONALIZADOS
+   ============================================================ */
+
+/* Estilos base para el body */
+body {
+  /* Fondo oscuro para tema dark */
+  background-color: #020617; /* slate-950 */
+  /* Texto blanco por defecto */
+  color: #f8fafc; /* slate-50 */
+  /* Altura mínima de la ventana completa */
+  min-height: 100vh;
+  /* Evitar scroll horizontal no deseado */
+  overflow-x: hidden;
+}
+
+/* Personalización de la barra de scroll para navegadores Webkit
+   (Chrome, Edge, Safari) para que combine con el tema oscuro */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a; /* slate-900 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155; /* slate-700 */
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; /* slate-600 */
+}
